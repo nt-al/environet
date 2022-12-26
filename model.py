@@ -26,10 +26,10 @@ class AQY_DS(Dataset):
 class AQY_NN(nn.Module):
 
     def __init__(
-        self,
-        input_size:int,
-        output_size:int,
-        hidden_size:int,
+                  self,
+                  input_size:int,
+                  output_size:int,
+                  hidden_size:int,
                 ):
 
         super(AQY_NN,self).__init__()
