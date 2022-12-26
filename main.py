@@ -37,8 +37,8 @@ print(f"\n[ANN]\tmae: {train_score[0,0]:.4f}\trmse: {train_score[0,1]:.4f}\tr2: 
 ho_scores = predict_holdout(holdout_df,ho_scaler)
 holdout_score = np.mean(ho_scores,axis=0)
 
-print(f"\n[ANN]\trmse: {holdout_score[0,1]:.4f}\tIoA: {holdout_score[0,2]:.4f}\
-        \n[LNR]\trmse: {holdout_score[1,1]:.4f}\tIoA: {holdout_score[1,2]:.4f}")
+print(f"\n[ANN]\tmae: {holdout_score[0,0]:.4f}\trmse: {holdout_score[0,1]:.4f}\tIoA: {holdout_score[0,2]:.4f}\
+        \n[LNR]\tmae: {holdout_score[1,0]:.4f}\trmse: {holdout_score[1,1]:.4f}\tIoA: {holdout_score[1,2]:.4f}")
 
 ############
 # visualize
@@ -64,7 +64,7 @@ plt.savefig(OUTDIR+"training.png",dpi=300)
 
 plt.figure(figsize=(15,5))
 
-for i in range(1,3):
+for i in range(3):
     plt.subplot(1,3,i+1)
     plt.bar(
             range(6),
