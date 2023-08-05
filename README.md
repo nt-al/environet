@@ -1,4 +1,7 @@
 # YFE302
+#### Ntigkaris E. Alexandros
+#### Python v.3.9.2
+
 Neural network implementation in environmental data.
 
 [Note]: Data cannot be provided due to privacy violation restrictions.
